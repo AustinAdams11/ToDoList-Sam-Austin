@@ -12,9 +12,5 @@ function addTask() {
         taskInput.value = '';
     }
 }
-function deleteTask(event) {
-    const task = event.target.parentElement;
-    taskList.removeChild(task);
 
-}
 
