@@ -7,29 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./index.js"></script>
-    <h1> <b>To Do List</b> </h1>
-     <ul>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> <span>Clean Crawfish</span></li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Prepare The Boil</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Gather the Fixings</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Dump Fixings Into Boil</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Add Crawfish To Boil</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Wait for Internal Temp 145</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> Dump Boil On Table</li>
-        <li><input id="todo-list" type="checkbox" name="tier1" value="Enterprise"> C'est Bon</li>
-        </li>
-      </ul>
-    <form>
-  <input type="Task" name="Add Task" placeholder=" Add Task"> <button type="submit">Submit</button>
-
-    </fieldset>
-</form>
+    <div class = "todo-container">
+    <h1> To Do List </h1>
+     
+      <input id="taskInput" type="text" placeholder=" Add a new task">
+   <button onclick="addTask()">Add Task</button>
+        <ul id = "taskList"></ul>
+        
+</div>
+ <script src="./index.js"></script>
 </body>
 <img
   class="fit-picture"
   src="https://i.etsystatic.com/13930028/r/il/a56dab/1151844854/il_570xN.1151844854_81h5.jpg"
   alt="Crawfish"
-  width="500px"
-  height="500px" />
+  width="300px"
+  height="300px" /> 
 </html>
+
+
+
+

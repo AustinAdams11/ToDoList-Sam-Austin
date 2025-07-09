@@ -1,3 +1,20 @@
 //let me know if you can see this
 //can do
-console.log('My code is cool');
+const taskInput = document.getElementById('taskInput')
+const taskList = document.getElementById('taskList')
+
+function addTask() {
+    const taskText = taskInput.value.trim();
+    if (taskText !== '') {
+        const li = document.createElement('li');
+        li.textContent = taskText;
+        taskList.appendChild(li);
+        taskInput.value = '';
+    }
+}
+function deleteTask(event) {
+    const task = event.target.parentElement;
+    taskList.removeChild(task);
+
+}
+
